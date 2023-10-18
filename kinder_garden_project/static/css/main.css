@@ -1,0 +1,209 @@
+body {
+    background-image: url(../images/background.png);
+    background-size: cover; /* Scales the image to cover the entire viewport */
+    background-position: center center; /* Centers the image horizontally and vertically */
+    background-attachment: fixed; /* Optional: Fixes the background image */
+}
+
+.image-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+@media screen and (max-width: 2000px) {
+    .mobile-navbar {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 45%;
+        height: auto;
+        padding: 5px;
+        padding-inline: initial;
+        background: #d53a3a;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin-left: 28%;
+    }
+
+    .navbar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        font-size: 22px;
+        font-family: 'Franklin Gothic Heavy';
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        max-width: 100%;
+        opacity: 0.95;
+        position: relative;
+        transition: box-shadow 0.3s;
+        margin: 15px;
+    }
+
+
+    .navbar a::after {
+        content: ""; /* Create an empty pseudo-element */
+        position: absolute; /* Position it absolutely within the link container */
+        left: 0; /* Start from the left edge of the link */
+        right: 0; /* Extend to the right edge of the link */
+        bottom: 0; /* Place the pseudo-element at the bottom (under the link text) */
+        height: 2px; /* Set the height of the underline */
+        background-color: #faf7f7; /* Set the underline color */
+        transform: scaleX(0); /* Initially, set the width to 0 for the underline effect */
+        transform-origin: center; /* Set the transformation origin to the center */
+        transition: transform 0.3s; /* Add a smooth transition for the underline effect */
+    }
+
+    /* Style the navbar links when hovered over */
+    .navbar a:hover::after {
+        transform: scaleX(1); /* Expand the underline width to 100% on hover */
+    }
+}
+
+@media screen and (max-width: 1197px) {
+    .mobile-navbar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar-image {
+        display: flex;
+        margin-top: -10px;
+        max-width: 60%;
+    }
+    .image-container {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .button1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+        height: auto;
+        padding: 10px;
+        padding-inline: initial;
+        background: #d53a3a;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+    }
+
+    .button2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+        height: auto;
+        padding: 10px;
+        padding-inline: initial;
+        background: #d53a3a;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+    }
+
+    .button3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+        height: auto;
+        padding: 10px;
+        padding-inline: initial;
+        background: #d53a3a;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+    }
+
+
+    .button4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+        height: auto;
+        padding: 10px;
+        padding-inline: initial;
+        background: #d53a3a;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+    }
+
+
+    .mobile-navbar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
+        height: auto;
+        font-size: 22px;
+        font-family: 'Franklin Gothic Heavy';
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        opacity: 0.95;
+        position: relative;
+        transition: box-shadow 0.3s;
+        margin-left: 25%;
+    }
+
+
+    .mobile-navbar a::after {
+        content: ""; /* Create an empty pseudo-element */
+        position: absolute; /* Position it absolutely within the link container */
+        left: 0; /* Start from the left edge of the link */
+        right: 0; /* Extend to the right edge of the link */
+        bottom: 0; /* Place the pseudo-element at the bottom (under the link text) */
+        height: 2px; /* Set the height of the underline */
+        background-color: #faf7f7; /* Set the underline color */
+        transform: scaleX(0); /* Initially, set the width to 0 for the underline effect */
+        transform-origin: center; /* Set the transformation origin to the center */
+        transition: transform 0.3s; /* Add a smooth transition for the underline effect */
+    }
+
+    /* Style the navbar links when hovered over */
+    .mobile-navbar a:hover::after {
+        transform: scaleX(0.5); /* Expand the underline width to 100% on hover */
+    }
+
+
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+
+.quote-img {
+    display: none;
+}
