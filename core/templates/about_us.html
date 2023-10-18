@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
 <head>
     <meta charset="UTF-8">
+
     <div class="image-logo">
         <img src="{% static 'images/logo.png' %}" class="logo">
     </div>
@@ -12,8 +13,25 @@
     <nav class="navbar">
         <a href="{% url 'home' %}" class="button1">< ВЪРНИ СЕ <</a>
     </nav>
+    <div class="about">
+        <ul class="text-about">
+
+            <h3 class="glowing-text" id="glowing-heading">МИСИЯ НА ДЕТСКОТО ЗАВЕДЕНИЕ</h3>
+            <p class="animated-paragraph">• Да подкрепя и вярва в потенциалните възможности на всяко дете;</p>
+            <p class="animated-paragraph">• Да създава благоприятна позитивна и разнообразна среда за неговото развитие;</p>
+            <p class="animated-paragraph">• Да мотивира учителите да реализират в най-висока степен уменията си;</p>
+            <p class="animated-paragraph">• Да стимулира и убеждава родителите и обществеността, че детската градина е значима и необходима
+                среда за пълноценното развитие на детето от предучилищна възраст.</p>
+            <p class="animated-paragraph">• Да поставим основите в личностното развитие на подрастващите като бъдещи граждани на Европа,
+                съчетавайки добрите традиции и необходимостта от модернизация на образованието – в съответствие с идеите
+                и плановете,
+                определени от Националната програма за развитие на училищното образование и предучилищната
+                подготовка.</p>
+        </ul>
+    </div>
+
 </head>
 <body>
-
+<script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>
