@@ -22,12 +22,11 @@ body {
 }
 
 
-
-
 @media screen and (max-width: 2000px) {
     .mobile-navbar {
         display: none;
     }
+
     .navbar {
         display: flex;
         justify-content: center;
@@ -81,6 +80,7 @@ body {
 }
 
 @media screen and (max-width: 1197px) {
+
     .mobile-navbar {
         display: block;
     }
@@ -90,13 +90,8 @@ body {
     }
 
     .navbar-image {
-        display: flex;
-        margin-top: -10px;
         max-width: 60%;
-    }
-    .image-container {
-        display: flex;
-        max-width: 100%;
+        margin-top: -10px;
     }
 
     .button1 {
