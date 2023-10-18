@@ -1,0 +1,5 @@
+# created by virtualenv automatically
+/Lib
+/Scripts
+/kinder_garden_project/settings.py
+/kinder_garden_project/static/images

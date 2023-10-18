@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДГ Веселите Делфинчета</title>
+</head>
+<body>
+<header>
+    <div class="image-logo">
+        <img src="{% static 'images/logo.png' %}" class="logo">
+    </div>
+
+
+    <nav class="mobile-navbar">
+        <a href="#" class="button1">НАЧАЛО</a>
+        <a href="#" class="button2">ЗА НАС</a>
+        <a href="#" class="button3">ЗА РОДИТЕЛИ</a>
+        <a href="#" class="button4">КОНТАКТИ</a>
+    </nav>
+
+    <nav class="navbar">
+        <a href="#">НАЧАЛО</a>
+        <a href="#">ЗА НАС</a>
+        <a href="#">ЗА РОДИТЕЛИ</a>
+        <a href="#">КОНТАКТИ</a>
+    </nav>
+
+
+    <div class="image-container">
+        <img src="{% static 'images/kids_on_ropes.png' class='navbar-image'%}" alt="header">
+    </div>
+    </nav>
+
+</header>
+<img src="{% static 'images/quoutes_kids.png' %}" class="quote-img">
+
+</body>
+</html>
