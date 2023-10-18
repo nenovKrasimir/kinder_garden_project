@@ -5,71 +5,93 @@ body {
     background-attachment: fixed; /* Optional: Fixes the background image */
 }
 
-
-.image-container {
-    position: relative; /* Set the container's position to relative */
-    text-align: left; /* Center-align the content horizontally (image) */
-}
-
-.image-container img {
-    position: absolute; /* Set the image's position to absolute */
-    margin-left: 70%;
-    top: 30px;
-    display: none;
-    /* Move it to the horizontal center */
-    transform: translateX(-50%); /* Center-align it horizontally */
-}
-
-
-.navbar {
+.image-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     height: auto;
-    padding: 10px;
-    padding-inline: initial;
-    background: #d53a3a;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
 }
 
-/* Style the navbar links */
-.navbar a {
-
-    font-size: 22px;
-    font-family: 'Franklin Gothic Heavy';
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
-    margin-left: 47px;
-    opacity: 0.95;
-    position: relative;
-    transition: box-shadow 0.3s;
+    height: auto;
 }
 
-/* Add an underline effect using ::after pseudo-element */
-.navbar a::after {
-    content: ""; /* Create an empty pseudo-element */
-    position: absolute; /* Position it absolutely within the link container */
-    left: 0; /* Start from the left edge of the link */
-    right: 0; /* Extend to the right edge of the link */
-    bottom: 0; /* Place the pseudo-element at the bottom (under the link text) */
-    height: 2px; /* Set the height of the underline */
-    background-color: #faf7f7; /* Set the underline color */
-    transform: scaleX(0); /* Initially, set the width to 0 for the underline effect */
-    transform-origin: center; /* Set the transformation origin to the center */
-    transition: transform 0.3s; /* Add a smooth transition for the underline effect */
+@media screen and (max-width: 2000px) {
+
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 25%;
+        height: auto;
+        padding: 5px;
+        padding-inline: initial;
+        background: #d53a3a;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin-left: 35%;
+    }
+
+    .navbar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        font-size: 22px;
+        font-family: 'Franklin Gothic Heavy';
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        opacity: 0.95;
+        position: relative;
+        transition: transform 0.3s;
+        margin: 15px;
+
+    }
+
+
+    .navbar a::after {
+        content: ""; /* Create an empty pseudo-element */
+        position: absolute; /* Position it absolutely within the link container */
+        left: 0; /* Start from the left edge of the link */
+        right: 0; /* Extend to the right edge of the link */
+        bottom: 0; /* Place the pseudo-element at the bottom (under the link text) */
+        height: 2px; /* Set the height of the underline */
+        background-color: #faf7f7; /* Set the underline color */
+        transform: scaleX(0); /* Initially, set the width to 0 for the underline effect */
+        transform-origin: center; /* Set the transformation origin to the center */
+        transition: transform 0.3s; /* Add a smooth transition for the underline effect */
+    }
+
+    /* Style the navbar links when hovered over */
+    .navbar a:hover::after {
+        transform: scaleX(1); /* Expand the underline width to 100% on hover */
+
+    }
+
+    .navbar a:hover {
+        animation: pulse 1s infinite; /* Apply the pulsating animation */
+    }
 }
 
-/* Style the navbar links when hovered over */
-.navbar a:hover::after {
-    transform: scaleX(1); /* Expand the underline width to 100% on hover */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Start with the regular size (1x) */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up to 1.1x size halfway through the animation */
+    }
+    100% {
+        transform: scale(1); /* Return to the regular size at the end of the animation */
+    }
 }
-
-
 .quote-img {
     text-align: center;
     margin-top: -150px;
@@ -111,12 +133,11 @@ body {
 }
 
 
-
-
 @media screen and (width: 1280px) {
     .mobile-navbar {
         display: none;
     }
+
     .navbar {
         display: flex;
         justify-content: center;
