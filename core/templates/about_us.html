@@ -12,23 +12,27 @@
 
     <nav class="navbar">
         <a href="{% url 'home' %}" class="button1">< ВЪРНИ СЕ <</a>
+
     </nav>
+    <img src="{% static 'images/girl_about_us.png' %}" class="nav-image">
     <div class="about">
         <ul class="text-about">
 
             <h3 class="glowing-text" id="glowing-heading">МИСИЯ НА ДЕТСКОТО ЗАВЕДЕНИЕ</h3>
-            <p class="animated-paragraph">• Да подкрепя и вярва в потенциалните възможности на всяко дете;</p>
-            <p class="animated-paragraph">• Да създава благоприятна позитивна и разнообразна среда за неговото развитие;</p>
-            <p class="animated-paragraph">• Да мотивира учителите да реализират в най-висока степен уменията си;</p>
-            <p class="animated-paragraph">• Да стимулира и убеждава родителите и обществеността, че детската градина е значима и необходима
-                среда за пълноценното развитие на детето от предучилищна възраст.</p>
-            <p class="animated-paragraph">• Да поставим основите в личностното развитие на подрастващите като бъдещи граждани на Европа,
-                съчетавайки добрите традиции и необходимостта от модернизация на образованието – в съответствие с идеите
-                и плановете,
-                определени от Националната програма за развитие на училищното образование и предучилищната
-                подготовка.</p>
+
+            {% for paragraph in paragraphs_mission_garden %}
+                <p class="animated-paragraph">{{ paragraph.text }}</p>
+            {% endfor %}
+            <h3 class="glowing-text" id="glowing-heading">ВИЗИЯ НА ДЕТСКОТО ЗАВЕДЕНИЕ</h3>
+
+            <p class="animated-paragraph">{{ text_vision_garden.text }}</p>
+
+            <h3 class="glowing-text">ЦЕННОСТ</h3>
+            <p class="animated-paragraph">{{ text_value_garden.text }}</p>
+
         </ul>
     </div>
+
 
 </head>
 <body>

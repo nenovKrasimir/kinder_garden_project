@@ -36,6 +36,8 @@ body {
         border-radius: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin-left: 38%;
+        opacity: 0;
+        animation: fadeIn 2s ease-out forwards; /* Adjust animation duration as needed */
     }
 
     .navbar a {
@@ -107,6 +109,8 @@ body {
     align-items: center;
     max-width: 100%;
     height: auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; /* Adjust animation duration as needed */
 }
 
 
@@ -139,3 +143,11 @@ body {
     transition: opacity 1s;
 }
 
+.nav-image {
+    margin-left: 39%;
+    margin-top: -150px;
+    max-width: 100px;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
