@@ -12,3 +12,5 @@ function animateParagraphs() {
 }
 
 animateParagraphs(); // Start showing and animating paragraphs one by one
+
+

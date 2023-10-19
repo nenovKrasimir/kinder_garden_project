@@ -35,7 +35,7 @@ body {
         background: #d53a3a;
         border-radius: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        margin-left: 39%;
+        margin-left: 38%;
         opacity: 0;
         animation: fadeIn 2s ease-out forwards; /* Adjust animation duration as needed */
     }
@@ -95,12 +95,6 @@ body {
         transform: scale(1); /* Return to the regular size at the end of the animation */
     }
 }
-.quote-img {
-    text-align: center;
-    margin-top: -150px;
-    margin-left: 20%;
-    display: none;
-}
 
 
 .image-logo {
@@ -111,14 +105,6 @@ body {
     height: auto;
     opacity: 0;
     animation: fadeIn 1s ease-out forwards; /* Adjust animation duration as needed */
-}
-
-
-.about {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
 }
 
 .glowing-text {
@@ -147,14 +133,43 @@ body {
 }
 
 .nav-image {
-    margin-top: -100px;
-    margin-left: 40%;
+    margin-left: 39%;
+    margin-top: -150px;
     max-width: 100px;
     height: auto;
     opacity: 0;
     animation: fadeIn 2s ease-out forwards;
 }
 
-.navbardiv {
-    max-width: 100%;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
+
+table, th, td {
+    font-family: "Franklin Gothic Heavy";
+    color: #252323;
+    border: 1px solid #ccc;
+    font-size: 20px ;
+
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f6e2bd;
+}
+
+tr:nth-child(even) {
+    background-color: #d53a3a;
+}
+
+
+tr:nth-child(odd) {
+    background-color: #f6e2bd;
+}
+

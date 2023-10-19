@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/for_parents.css' %}">
+<head>
+    <meta charset="UTF-8">
+
+    <div class="image-logo">
+        <img src="{% static 'images/logo.png' %}" class="logo">
+    </div>
+
+
+    <nav class="navbar">
+        <a href="{% url 'home' %}" id="dynamic-button" class="button1">< ВЪРНИ СЕ <</a>
+
+    </nav>
+    <img src="{% static 'images/girl_about_us.png' %}" class="nav-image">
+    <h1 class="glowing-text" id="glowing-heading">Дейности</h1>
+    <table>
+        <tr>
+            <th>Времево разписание</th>
+            <th>Дейности</th>
+        </tr>
+        <tr>
+            <td>07:30</td>
+            <td>
+                <p>• Прием на деца;</p>
+                <p>• Дейности по интереси;</p>
+                <p>• Сутрешно раздвижване;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>08:45 - 09:00</td>
+            <td>Сутрешна закуска</td>
+        </tr>
+        <tr>
+            <td>09:00 - 09:30</td>
+            <td>Основна форма на педагогическо взаймодействие</td>
+        </tr>
+        <tr>
+            <td>09:30 - 09:45</td>
+            <td>Подвижни игри</td>
+        </tr>
+        <tr>
+            <td>09:45 - 10:00</td>
+            <td>Подкрепителна закуска - плод</td>
+        </tr>
+        <tr>
+            <td>10:00 - 10:30</td>
+            <td>Основна форма на педагогическо взаимодействие</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:30</td>
+            <td>
+                <p>• Допълнителна форма на педагогическо взаимодействие</p>
+                <p>• Индивидуална работа с деца;</p>
+                <p>• Работа с малка група деца;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>11:30 - 12:00</td>
+            <td>
+                <p>• Игри на открито</p>
+                <p>• Сюжетно - ролеви игри;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>12:00 - 13:00</td>
+            <td> Обад
+            </td>
+        </tr>
+        <tr>
+            <td>13:30</td>
+            <td>
+                Следобеден сън
+            </td>
+        </tr>
+        <tr>
+            <td>15:30</td>
+            <td>
+                <p>• Подвижни игри</p>
+                <p>• Следобедна закуска;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>16:00</td>
+            <td>
+                Допълнителна форма на педагогическо взаймодействие
+            </td>
+        </tr>
+
+                <tr>
+            <td>16:00</td>
+            <td>
+                <p>• Игри;</p>
+                <p>• Занимания по интереси;</p>
+                <p>• Индивидуални занимания с децата</p>
+                <p>• Изпращане на децата</p>
+            </td>
+        </tr>
+        <!-- Add more rows for the rest of the week -->
+    </table>
+
+</head>
+<body>
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
