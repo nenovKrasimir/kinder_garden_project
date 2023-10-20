@@ -24,14 +24,13 @@
         <a href="{% url "home"%}">НАЧАЛО</a>
         <a href="{% url "about_us" %}">ЗА НАС</a>
         <a href="{% url "for_parents" %}">ЗА РОДИТЕЛИ</a>
-        <a href="#">КОНТАКТИ</a>
+        <a href="{% url "contacts" %}">КОНТАКТИ</a>
     </nav>
 
 
     <div class="image-container">
         <img src="{% static 'images/kids_on_ropes.png'%}"  class='navbar-image' alt="header">
     </div>
-    </nav>
 
 </header>
 <img src="{% static 'images/quoutes_kids.png' %}" class="quote-img">

@@ -15,3 +15,7 @@ def about_us(request):
         'text_value_garden': value_garden
     }
     return render(request, 'about_us.html', content)
+
+
+def contacts(request):
+    return render(request, 'contacts.html')

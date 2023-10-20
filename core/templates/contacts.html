@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+<head>
+    <meta charset="UTF-8">
+
+    <div class="image-logo">
+        <img src="{% static 'images/logo.png' %}" class="logo">
+    </div>
+
+    <div class="navbardiv">
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="button1">< ВЪРНИ СЕ <</a>
+        </nav>
+        <img src="{% static 'images/girl_about_us.png' %}" class="nav-image">
+    </div>
+</head>
+<body>
+
+    <address class="address">
+        <p class="address-paragraph">Email: v.delfincheta@abv.bg</p>
+        <p class="address-paragraph">Телефон: 0579/660-450</p>
+        <p class="address-paragraph">Адрес: с. Кранево 9649, община Балчик, област Добрич</p>
+        <p class="address-paragraph">Улица: ул. „Черно море” 7Б</p>
+    </address>
+</>
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2901.618734827449!2d28.051758375984985!3d43.34316667111847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDIwJzM1LjQiTiAyOMKwMDMnMTUuNiJF!5e0!3m2!1sbg!2sbg!4v1697786110163!5m2!1sbg!2sbg"
+        class="map-location"></iframe>
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

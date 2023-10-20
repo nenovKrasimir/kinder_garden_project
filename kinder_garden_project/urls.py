@@ -7,5 +7,5 @@ from for_parents import urls as parents_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(core_urls)),
-    path('for_parents/', include(parents_urls))
+    path('za_roditeli/', include(parents_urls))
 ]

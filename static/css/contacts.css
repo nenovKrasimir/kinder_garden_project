@@ -35,7 +35,7 @@ body {
         background: #d53a3a;
         border-radius: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        margin-left: 39%;
+        margin-left: 38%;
         opacity: 0;
         animation: fadeIn 2s ease-out forwards; /* Adjust animation duration as needed */
     }
@@ -95,32 +95,6 @@ body {
         transform: scale(1); /* Return to the regular size at the end of the animation */
     }
 }
-.quote-img {
-    text-align: center;
-    margin-top: -150px;
-    margin-left: 20%;
-    display: none;
-}
-
-
-.image-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards; /* Adjust animation duration as needed */
-}
-
-
-.about {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    max-width: 100%;
-
-}
 
 .glowing-text {
     display: flex;
@@ -140,14 +114,6 @@ body {
     }
 }
 
-.animated-paragraph {
-    font-size: 18px;
-    color: honeydew;
-    opacity: 0;
-    transition: opacity 1s;
-    max-width: 100%;
-}
-
 .nav-image {
     margin-top: -100px;
     margin-left: 40%;
@@ -157,6 +123,22 @@ body {
     animation: fadeIn 2s ease-out forwards;
 }
 
-.navbardiv {
-    max-width: 100%;
+.map-location {
+    margin-left: 29%;
+    width: 700px;
+    height: 500px;
+}
+
+.address {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.address-paragraph {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
