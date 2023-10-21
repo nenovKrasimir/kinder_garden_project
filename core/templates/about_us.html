@@ -1,21 +1,9 @@
+
+{% extends 'home.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="{% static 'css/about_us.css' %}">
-<head>
-    <meta charset="UTF-8">
-
-    <div class="image-logo">
-        <img src="{% static 'images/logo.png' %}" class="logo">
-    </div>
-
-    <div class="navbardiv">
-    <nav class="navbar">
-        <a href="{% url 'home' %}" class="button1">< ВЪРНИ СЕ <</a>
-    </nav>
-        <img src="{% static 'images/girl_about_us.png' %}" class="nav-image">
-    </div>
+{% block content %}
     <div class="about">
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
         <ul class="text-about">
 
             <h3 class="glowing-text" id="glowing-heading">МИСИЯ НА ДЕТСКОТО ЗАВЕДЕНИЕ</h3>
@@ -32,10 +20,5 @@
 
         </ul>
     </div>
-
-
-</head>
-<body>
 <script src="{% static 'js/scripts.js' %}"></script>
-</body>
-</html>
+{% endblock %}

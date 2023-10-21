@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ДГ Веселите Делфинчета</title>
@@ -18,6 +19,7 @@
         <a href="#" class="button2">ЗА НАС</a>
         <a href="#" class="button3">ЗА РОДИТЕЛИ</a>
         <a href="#" class="button4">КОНТАКТИ</a>
+        <a href="#" class="button4">ГАЛЕРИЯ</a>
     </nav>
 
     <nav class="navbar">
@@ -25,15 +27,17 @@
         <a href="{% url "about_us" %}">ЗА НАС</a>
         <a href="{% url "for_parents" %}">ЗА РОДИТЕЛИ</a>
         <a href="{% url "contacts" %}">КОНТАКТИ</a>
+        <a href="#">ГАЛЕРИЯ</a>
     </nav>
+    {% block content %}
 
-
-    <div class="image-container">
+   <div class="image-container">
         <img src="{% static 'images/kids_on_ropes.png'%}"  class='navbar-image' alt="header">
     </div>
 
 </header>
 <img src="{% static 'images/quoutes_kids.png' %}" class="quote-img">
-
+{% endblock %}
+<script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>

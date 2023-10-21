@@ -11,6 +11,8 @@ body {
     align-items: center;
     max-width: 100%;
     height: auto;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 .logo {
@@ -19,6 +21,7 @@ body {
     align-items: center;
     max-width: 100%;
     height: auto;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 
@@ -39,6 +42,8 @@ body {
         border-radius: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin-left: 28%;
+        opacity: 0;
+        animation: fadeIn 2s ease-out forwards;
     }
 
     .navbar a {
@@ -70,7 +75,8 @@ body {
         background-color: #faf7f7; /* Set the underline color */
         transform: scaleX(0); /* Initially, set the width to 0 for the underline effect */
         transform-origin: center; /* Set the transformation origin to the center */
-        transition: transform 0.3s; /* Add a smooth transition for the underline effect */
+        transition: transform 0.3s;
+        /* Add a smooth transition for the underline effect */
     }
 
     /* Style the navbar links when hovered over */
@@ -81,8 +87,14 @@ body {
     .navbar a:hover {
         animation: pulse 1s infinite; /* Apply the pulsating animation */
     }
+     /* Adjust animation duration as needed */
 }
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 
 
 
@@ -220,5 +232,20 @@ body {
     }
     100% {
         transform: scale(1); /* Return to the regular size at the end of the animation */
+    }
+}
+
+nav a.active {
+    text-shadow: 0 0 10px #00ffff;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #f8f2f3;
+
+    }
+    100% {
+        text-shadow: 0 0 10px #ff0059;
     }
 }
